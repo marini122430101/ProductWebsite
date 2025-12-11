@@ -1,82 +1,99 @@
 import SectionTitle from "../components/SectionTitle";
-import produkImg from "../assets/produk.png";
+import Logo from "../assets/logo.png";
 
 export default function Documentation() {
   return (
-    <div className="pt-24 max-w-6xl mx-auto px-6">
-      <SectionTitle title="Documentation" />
+    <div className="
+      relative w-full min-h-screen 
+      bg-gradient-to-b from-white via-green-100 to-green-200
+      pt-28 pb-20 px-6 overflow-hidden
+    ">
 
-      <div className="space-y-16">
+      {/* Floating background decorations */}
+      <div className="absolute top-10 left-10 w-40 h-40 bg-teal-800 rounded-full blur-3xl"></div>
+      <div className="absolute top-10 right-10 w-40 h-40 bg-teal-800 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-48 h-48 bg-green-400 rounded-full blur-3xl"></div>
 
-        {/* Gambar Produk */}
-        <div>
-          <h3 className="text-xl font-semibold text-indigo-600 mb-3">
-            Overview Dokumentasi
-          </h3>
+      <div className="relative max-w-6xl mx-auto">
+        
+        {/* TITLE */}
+        <SectionTitle title="Documentation" />
 
-          <img
-            src={produkImg}
-            className="w-full h-72 object-cover rounded-xl shadow-lg border border-indigo-100"
-            alt="produk"
-          />
-        </div>
+        <div className="space-y-20 mt-10">
 
-        {/* =============================
-            STEP 1
-        ============================== */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* Placeholder Image */}
-          <div className="bg-gray-200 h-72 rounded-xl shadow-inner animate-pulse"></div>
-
-          {/* Text */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-              Proses 1 — Judul Proses
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Tulis penjelasan detail mengenai proses pertama. 
-              Nantinya bagian ini berisi deskripsi lengkap mengenai langkah
-              yang terjadi pada produk Anda.
-            </p>
-          </div>
-        </div>
-
-        {/* =============================
-            STEP 2
-        ============================== */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* Swap posisi (text kiri – image kanan) */}
-          <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-              Proses 2 — Judul Proses
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Tulis deskripsi yang menjelaskan proses kedua. 
-              Gambar di samping akan diganti nanti sesuai dokumentasi asli produk Anda.
-            </p>
+          {/* ===== Gambar Produk ===== */}
+          <div className="bg-white/60 backdrop-blur-lg p-6 rounded-3xl shadow-xl border border-green-100">
+            <img
+              src={Logo}
+              className="w-full h-72 object-cover rounded-xl shadow-lg"
+              alt="produk"
+            />
           </div>
 
-          {/* Placeholder Image */}
-          <div className="bg-gray-200 h-72 rounded-xl shadow-inner animate-pulse order-1 md:order-2"></div>
-        </div>
+          {/* ===== STEP 1 ===== */}
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            
+            {/* Placeholder img */}
+            <div className="
+              h-72 rounded-2xl shadow-lg 
+              bg-white/50 backdrop-blur-md border border-green-100 
+              animate-pulse
+            "></div>
 
-        {/* =============================
-            STEP 3 (Optional)
-        ============================== */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* Placeholder */}
-          <div className="bg-gray-200 h-72 rounded-xl shadow-inner animate-pulse"></div>
-
-          {/* Text */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-              Proses 3 — Judul Proses
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Tambahkan proses ketiga atau proses tambahan lainnya jika diperlukan.
-              Semua placeholder ini dapat diganti gambar asli saat dokumentasi sudah siap.
-            </p>
+            {/* Text */}
+            <div>
+              <h3 className="text-3xl font-bold text-green-900 mb-2">
+                Proses 1 — Judul Proses
+              </h3>
+              <p className="text-green-900/70 leading-relaxed text-lg">
+                Tulis penjelasan detail mengenai proses pertama. 
+                Nantinya bagian ini berisi deskripsi lengkap mengenai langkah
+                yang terjadi pada produk Anda.
+              </p>
+            </div>
           </div>
+
+          {/* ===== STEP 2 ===== */}
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            
+            {/* Text kiri */}
+            <div className="order-2 md:order-1">
+              <h3 className="text-3xl font-bold text-green-900 mb-2">
+                Proses 2 — Judul Proses
+              </h3>
+              <p className="text-green-900/70 leading-relaxed text-lg">
+                Tulis deskripsi yang menjelaskan proses kedua. Gambar di samping
+                akan diganti nanti sesuai dokumentasi asli produk Anda.
+              </p>
+            </div>
+
+            {/* Placeholder img */}
+            <div className="
+              h-72 rounded-2xl shadow-lg 
+              bg-white/50 backdrop-blur-md border border-green-100 
+              animate-pulse order-1 md:order-2
+            "></div>
+          </div>
+
+          {/* ===== STEP 3 ===== */}
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            
+            <div className="
+              h-72 rounded-2xl shadow-lg 
+              bg-white/50 backdrop-blur-md border border-green-100 animate-pulse
+            "></div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-green-900 mb-2">
+                Proses 3 — Judul Proses
+              </h3>
+              <p className="text-green-900/70 leading-relaxed text-lg">
+                Tambahkan proses ketiga atau proses tambahan lainnya jika diperlukan.
+                Semua placeholder ini dapat diganti gambar asli saat dokumentasi sudah siap.
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>

@@ -1,57 +1,68 @@
 import SectionTitle from "../components/SectionTitle";
+import DemoVideo from "../assets/videoyt.mp4";
 
 export default function Video() {
   return (
-    <div className="pt-24 max-w-5xl mx-auto px-6">
-      <SectionTitle title="Video Demo" />
+    <div
+      className="
+        relative w-full min-h-screen 
+        bg-gradient-to-b from-white via-green-100 to-green-200 
+        pt-25 pb-20 px-6 overflow-hidden
+      "
+    >
+      {/* Floating background decorations */}
+      <div className="absolute top-16 left-10 w-36 h-36 bg-green-300/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-16 right-10 w-48 h-48 bg-green-400/25 rounded-full blur-3xl"></div>
 
-      {/* VIDEO PLACEHOLDER */}
-      <div className="w-full bg-gray-200 h-80 rounded-xl shadow-lg flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-gray-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M14.752 11.168l-5.197-3.023A1 1 0 008 9.012v6.045a1 1 0 001.555.848l5.197-3.023a1 1 0 000-1.714z"
-              />
-            </svg>
+      <div className="relative max-w-7xl mx-auto">
+        <SectionTitle title="Video" />
+
+        {/* VIDEO + DESCRIPTION IN ROW */}
+        <div className="mt-5 flex flex-col lg:flex-row gap-10 items-start">
+
+          {/* VIDEO PLAYER */}
+          <div
+            className="
+              bg-white/60 backdrop-blur-md border border-green-100 shadow-xl 
+              rounded-2xl p-4 flex-1 max-w-3xl
+            "
+          >
+            <video
+              src={DemoVideo}
+              controls
+              className="w-full max-w-4xl rounded-xl shadow-lg"
+            ></video>
           </div>
-          <p className="text-gray-500 mt-3">
-            Video belum tersedia — placeholder
-          </p>
+
+          {/* DESCRIPTION */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-green-900">
+              Penjelasan Singkat
+            </h3>
+
+            <p className="mt-3 text-green-900/70 leading-relaxed text-lg">
+              Berikut merupakan video dari cara kerja produk kami. 
+              Video ini menunjukkan alur proses, fitur utama, dan bagaimana 
+              produk ini digunakan dalam situasi nyata.
+            </p>
+
+            <p className="mt-6 text-green-800 font-semibold text-lg">
+              Tonton versi YouTube:
+            </p>
+
+            <a
+              href="https://youtu.be/A-m0-y2ZKJU?si=ovZL6hDemjvxaXaR"
+              target="_blank"
+              className="
+                inline-block mt-1 text-green-700 underline 
+                hover:text-green-900 transition font-medium
+              "
+            >
+              https://youtu.be/A-m0-y2ZKJU?si=ovZL6hDemjvxaXaR
+            </a>
+          </div>
+
         </div>
-      </div>
-
-      {/* DESCRIPTION + YT LINK */}
-      <div className="mt-10">
-        <h3 className="text-xl font-semibold text-gray-800">
-          Penjelasan Singkat
-        </h3>
-        <p className="mt-2 text-gray-600 leading-relaxed">
-          Ini adalah demo video yang akan menampilkan cara kerja produk Anda.
-          Setelah video asli sudah dibuat, Anda dapat mengganti placeholder di atas
-          dengan elemen video sebenarnya.
-        </p>
-
-        {/* YOUTUBE LINK */}
-        <p className="mt-4 text-indigo-600 font-medium">
-          Lihat Video di YouTube:
-        </p>
-        <a
-          href="#"
-          target="_blank"
-          className="text-indigo-500 underline hover:text-indigo-700"
-        >
-          (Link YouTube akan ditampilkan di sini)
-        </a>
       </div>
     </div>
   );
