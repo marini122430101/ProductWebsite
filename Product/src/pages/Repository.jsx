@@ -63,7 +63,7 @@ export default function Repository() {
 
         {/* CTA BUTTON */}
         <a
-          href="https://github.com/" // Masukan link repository Anda di sini
+          href="https://github.com/marini122430101/ProductWebsite" 
           target="_blank"
           className="inline-flex items-center gap-2 mt-6 bg-indigo-600 text-white 
           px-6 py-3 rounded-xl shadow-md hover:bg-indigo-700 hover:shadow-lg 

@@ -26,15 +26,39 @@ export default function Home() {
           </h1>
 
 
-          <p className="mt-4 text-lg text-gray-700 max-w-lg leading-relaxed">
-            Healvire mengintegrasikan tiga mekanisme kunci penyembuhan luka dalam satu plester:
-            1. Regenerasi Jaringan yang Lebih Optimal
-            Ekstrak ikan gabus dikenal kaya akan protein albumin dan asam amino esensial yang mendukung proses epitelisasi dan pembentukan jaringan baru. Bahan bioaktif ini membantu memulihkan struktur kulit lebih cepat dan lebih kuat.
-            2. Perlindungan Antimikroba Alami
-            Kandungan antimikroba dalam madu membantu menekan pertumbuhan bakteri penyebab infeksi, menjaga luka tetap bersih tanpa mengiritasi kulit sensitif penderita diabetes.
-            3. Moist Wound Healing yang Stabil dan Aman
-            Matriks polyvinyl alcohol (PVA)menghasilkan lingkungan lembap yang stabil, memfasilitasi migrasi sel, mengurangi rasa sakit, dan mempercepat penutupan luka. PVA juga memberikan struktur plester yang nyaman, fleksibel, dan higienis.
-          </p>
+          <div className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed space-y-4">
+            <p className="font-medium">
+              Healvire mengintegrasikan tiga mekanisme kunci penyembuhan luka dalam satu plester:
+            </p>
+            
+            <div className="space-y-3 pl-2">
+              <div>
+                <p className="font-semibold text-green-800">1. Regenerasi Jaringan yang Lebih Optimal</p>
+                <p className="mt-1">
+                  Ekstrak ikan gabus dikenal kaya akan protein albumin dan asam amino esensial yang mendukung 
+                  proses epitelisasi dan pembentukan jaringan baru. Bahan bioaktif ini membantu memulihkan 
+                  struktur kulit lebih cepat dan lebih kuat.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-green-800">2. Perlindungan Antimikroba Alami</p>
+                <p className="mt-1">
+                  Kandungan antimikroba dalam madu membantu menekan pertumbuhan bakteri penyebab infeksi, 
+                  menjaga luka tetap bersih tanpa mengiritasi kulit sensitif penderita diabetes.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-green-800">3. Moist Wound Healing yang Stabil dan Aman</p>
+                <p className="mt-1">
+                  Matriks polyvinyl alcohol (PVA) menghasilkan lingkungan lembap yang stabil, memfasilitasi 
+                  migrasi sel, mengurangi rasa sakit, dan mempercepat penutupan luka. PVA juga memberikan 
+                  struktur plester yang nyaman, fleksibel, dan higienis.
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="mt-8 flex gap-4">

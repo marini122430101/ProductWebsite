@@ -11,33 +11,30 @@ export default function Description() {
 
       {/* Title */}
       <div className="text-center mb-5 animate-slideInLeft relative z-10">
-        <h1
-          className="text-4xl md:text-5xl font-extrabold leading-tight 
+        <h1 className="
+          text-4xl md:text-5xl font-extrabold leading-tight 
           bg-gradient-to-r from-green-800 via-emerald-600 to-teal-500 
-          text-transparent bg-clip-text drop-shadow-md tracking-tight"
-        >
+          text-transparent bg-clip-text drop-shadow-md tracking-tight
+        ">
           Product Description
         </h1>
       </div>
 
       {/* Content Card */}
-      <div
-        className="
-          max-w-6xl mx-auto bg-white/90 backdrop-blur-xl 
-          rounded-3xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] 
-          p-6 md:p-10
-          animate-slideInRight relative z-10
-        "
-      >
+      <div className="
+        max-w-6xl mx-auto bg-white/90 backdrop-blur-xl 
+        rounded-3xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] 
+        p-6 md:p-10 animate-slideInRight relative z-10
+      ">
 
-        {/* FLEX ROW: Image Left, Description Right */}
+        {/* ROW ATAS: Image + Description */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
 
           {/* Image */}
           <div className="flex-1 flex justify-center">
             <img
               src={Logo}
-              alt="Product"
+              alt="Healvire Product"
               className="
                 rounded-2xl shadow-xl max-h-[360px] object-contain 
                 transition-all duration-300 hover:scale-105
@@ -45,26 +42,37 @@ export default function Description() {
             />
           </div>
 
-          {/* Description */}
+          {/* Description (2 paragraf pertama) */}
           <div className="flex-1 text-gray-700 leading-relaxed text-justify space-y-5 text-[1.07rem]">
             <p>
-              Ini merupakan deskripsi lengkap mengenai produk Healvire. Tuliskan manfaat,
-              tujuan penggunaan, dan bagaimana produk ini bekerja untuk memberikan nilai
-              terbaik kepada pengguna.
+              <strong>Healvire</strong> adalah wound dressing bioaktif generasi terbaru yang
+              dikembangkan khusus untuk membantu penyembuhan luka diabetes yang sulit sembuh.
+              Dengan pendekatan teknologi <em>advanced bioactive wound repair</em>, Healvire
+              dirancang untuk menciptakan lingkungan luka yang optimal, bersih, dan aman guna
+              mempercepat regenerasi jaringan kulit.
             </p>
 
             <p>
-              Anda dapat menambahkan fitur unggulan, bahan utama, teknologi yang digunakan,
-              serta keunggulan yang membedakan produk ini dari kompetitor di pasaran.
-            </p>
-
-            <p>
-              Informasi yang jelas, terstruktur, dan menarik akan memudahkan pengguna
-              memahami kualitas serta potensi produk yang Anda buat.
+              Healvire memadukan <strong>ekstrak ikan gabus</strong> yang kaya albumin untuk
+              mendukung pembentukan jaringan baru, <strong>madu murni</strong> sebagai agen
+              antimikroba alami untuk menekan risiko infeksi, serta matriks
+              <strong> polyvinyl alcohol (PVA)</strong> yang biokompatibel guna menjaga kelembapan
+              luka secara stabil. Kombinasi ini bekerja sinergis mempercepat proses epitelisasi
+              tanpa mengiritasi kulit sensitif penderita diabetes.
             </p>
           </div>
-
         </div>
+
+        {/* PARAGRAF BAWAH: Full width */}
+        <div className="mt-8 text-gray-700 leading-relaxed text-justify text-[1.07rem]">
+          <p>
+            Berbeda dari plester konvensional, Healvire tidak hanya menutup luka, tetapi aktif
+            berperan dalam proses penyembuhan. Tekstur hydrogel yang lembut dan fleksibel
+            memberikan kenyamanan maksimal, mengurangi rasa nyeri saat pemakaian maupun saat
+            dilepas, serta membantu menurunkan risiko luka kronis dan komplikasi lanjutan.
+          </p>
+        </div>
+
       </div>
     </div>
   );
