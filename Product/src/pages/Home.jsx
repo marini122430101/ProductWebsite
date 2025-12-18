@@ -27,8 +27,13 @@ export default function Home() {
 
 
           <p className="mt-4 text-lg text-gray-700 max-w-lg leading-relaxed">
-            Kami menghadirkan solusi digital modern yang informatif, interaktif, dan mudah digunakan.
-            Temukan deskripsi produk, dokumentasi, demo video, dan informasi tim pengembang di website ini.
+            Healvire mengintegrasikan tiga mekanisme kunci penyembuhan luka dalam satu plester:
+            1. Regenerasi Jaringan yang Lebih Optimal
+            Ekstrak ikan gabus dikenal kaya akan protein albumin dan asam amino esensial yang mendukung proses epitelisasi dan pembentukan jaringan baru. Bahan bioaktif ini membantu memulihkan struktur kulit lebih cepat dan lebih kuat.
+            2. Perlindungan Antimikroba Alami
+            Kandungan antimikroba dalam madu membantu menekan pertumbuhan bakteri penyebab infeksi, menjaga luka tetap bersih tanpa mengiritasi kulit sensitif penderita diabetes.
+            3. Moist Wound Healing yang Stabil dan Aman
+            Matriks polyvinyl alcohol (PVA)menghasilkan lingkungan lembap yang stabil, memfasilitasi migrasi sel, mengurangi rasa sakit, dan mempercepat penutupan luka. PVA juga memberikan struktur plester yang nyaman, fleksibel, dan higienis.
           </p>
 
           {/* CTA Buttons */}
